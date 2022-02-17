@@ -14,8 +14,7 @@ plugin = {"pretty" , "html:target/HtmlReports.html",
 		"json:target/JSONReports/report.json",
 		"junit:target/JUnitReports/report.xml"} )
 
-public class TestRunner {
-	
+public class TestRunner {	
 
 }
 

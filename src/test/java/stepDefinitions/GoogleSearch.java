@@ -1,21 +1,24 @@
 package stepDefinitions;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.cucumber.java.After;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+
 
 public class GoogleSearch {
 	WebDriver driver = null;
 	
 	@Given("I have opened the browser")
 	public void i_have_opened_the_browser() {
-		System.setProperty("webdriver.chrome.driver", "C:/chrome_webdriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:/chrome_webdriver/chromedriver.exe"); // chrome webdriver 
 		driver = new ChromeDriver();
 	}
 
@@ -32,7 +35,12 @@ public class GoogleSearch {
 
 	@Then("search results should contain {string}")
 	public void search_results_should_contain(String string) {
-		driver.getPageSource().contains("Wells Fargo");
+		Assert.assertTrue(driver.getPageSource().contains("Wells Fargo"));
+	}
+	
+	@After
+	public void closeBrowser() {
+		driver.close();
 	}
 
 }

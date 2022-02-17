@@ -3,17 +3,28 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-02-17T07:26:44.590Z",
+        "start_timestamp": "2022-02-17T10:47:27.904Z",
         "line": 3,
         "name": "Test Google Search",
         "description": "",
         "id": "test-google-search-functionality;test-google-search",
+        "after": [
+          {
+            "result": {
+              "duration": 548562700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.GoogleSearch.closeBrowser()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3586097200,
+              "duration": 4274951500,
               "status": "passed"
             },
             "line": 4,
@@ -25,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 3678267700,
+              "duration": 2520270500,
               "status": "passed"
             },
             "line": 5,
@@ -37,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 2768049100,
+              "duration": 2778641600,
               "status": "passed"
             },
             "line": 6,
@@ -55,7 +66,7 @@
           },
           {
             "result": {
-              "duration": 417762300,
+              "duration": 299615500,
               "status": "passed"
             },
             "line": 7,
