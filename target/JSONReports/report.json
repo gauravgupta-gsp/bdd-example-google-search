@@ -1,0 +1,84 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-17T07:26:44.590Z",
+        "line": 3,
+        "name": "Test Google Search",
+        "description": "",
+        "id": "test-google-search-functionality;test-google-search",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3586097200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have opened the browser",
+            "match": {
+              "location": "stepDefinitions.GoogleSearch.i_have_opened_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3678267700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on Google Search page",
+            "match": {
+              "location": "stepDefinitions.GoogleSearch.i_am_on_google_search_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2768049100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I search for \"Wells Fargo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Wells Fargo\"",
+                  "offset": 13
+                }
+              ],
+              "location": "stepDefinitions.GoogleSearch.i_search_for(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 417762300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "search results should contain \"Wells Fargo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Wells Fargo\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.GoogleSearch.search_results_should_contain(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test Google Search functionality",
+    "description": "",
+    "id": "test-google-search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/google_search.feature",
+    "tags": []
+  }
+]
