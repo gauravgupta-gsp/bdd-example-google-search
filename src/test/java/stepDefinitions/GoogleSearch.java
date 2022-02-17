@@ -16,6 +16,8 @@ import io.cucumber.java.en.When;
 public class GoogleSearch {
 	WebDriver driver = null;
 	
+	
+	
 	@Given("I have opened the browser")
 	public void i_have_opened_the_browser() {
 		System.setProperty("webdriver.chrome.driver", "C:/chrome_webdriver/chromedriver.exe"); // chrome webdriver 
